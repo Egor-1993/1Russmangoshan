@@ -2,11 +2,12 @@ package main
 
 import "fmt"
 
-func scopedVar() {
+func scopedVar() int {
 	x := 5
-	fmt.Println("x:", x)
+	return x // ← вот теперь функция "отдаёт" x наружу
 }
+
 func main() {
-	scopedVar()
-	fmt.Print(x)
+	result := scopedVar()
+	fmt.Println("x:", result)
 }
