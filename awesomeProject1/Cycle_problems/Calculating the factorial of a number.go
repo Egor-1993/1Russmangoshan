@@ -10,5 +10,5 @@ func main() {
 	for i := 2; i <= a; i++ {
 		result *= i
 	}
-	fmt.Printf("a factorial: %d\n", result)
+	fmt.Printf("a fac: %d\n", result)
 }
